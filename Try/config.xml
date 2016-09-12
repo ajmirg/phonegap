@@ -1,0 +1,11 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+	 <icon src="img/logo.png" platform="android" width="57" height="57" density="mdpi" />
+  <name>Business Essence 1.0</name>
+
+  <!--source a logo for the icon -->
+  <icon src="img/logo.png" platform="ios" width="57" height="57" density="mdpi" />
+  <description>An app that most businessmen would find useful. It gives the user access to all information needed in one app</description>
+  <author href="http://phonegap.com" email="support@phonegap.com">Ajmir Tech Team</author>
+  <content src="index.html"/>
+ 
+</widget>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<!--
+*	Author:	ajmir goolam hossen
+*	Assignment:	WE4	Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	9/12/2016
+*	Ref:	w3schools.com
+-->
+<style>
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- linking the css, which also contain my own css styling on the same file --> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+<!-- sourcing the javascripts -->
+<script src="js/angular.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+
+<h1>Business Essence 1.0</h1>
+
+<script src="js/myjs.js"></script>
+
+<!-- The ng-app directive initializes the Angular JS application called 'myToDoList' and controller was defined -->
+<div ng-app="myToDoList" ng-controller="myCtrl" >
+  <ul >
+  <!--The ng-repeat directive repeats j number of times, which is based on 'tasks' array referred to in the js 
+	 The repetition is about the list and image of the delete x called cross.jpg
+	the ng-click is the directive that watches for clicking event which is linked with the function 'removeItem' , which removes 
+	the item from the 'tasks' array
+  -->
+    <li ng-repeat="j in tasks">{{j}}<img ng-click="removeItem($index)" src="img/cross.jpg"  height="16" width="16"></p></li> 
+
+  </ul > 
+
+ <!-- The ng-model directive binds the value of the input element --> 
+  <input ng-model="addTask" placeholder="Add a New Task here">
+
+  <!--the ng-click is the directive that watches for clicking event which is linked with the function 'addItem' , which add 
+	the item from the 'tasks' array -->
+   <button ng-click="addItem()" style="background-color:#33AABB;color:white">Add Task</button>  
+
+</div>
+
+<p> Touch the red x to delete the item </p>
+
+</body>
+</html>
+
